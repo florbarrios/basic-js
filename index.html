@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Js practice exrcises</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Basic Js</h1>
+        </header>
+
+        <div>
+            <h3>Get date</h3>
+            <p>Today is: <span id="day"></span></p>
+            <p>The time is: <span id="time"></span></p>
+            <p>The full date is: <span id="fulldate"></span></p>
+        </div>
+
+        <div>
+            <h3>Compare input with random number</h3>
+            <form>
+                Select a number <input type="number" id="userNumber">
+                <input type="button" id="buttonSubmit" value="Submit" onclick="compareNumber()"> </br>
+                <p id="outcomeMessage"></p>
+            </form>
+        </div>
+
+        <div>
+            <h3>Days until Christmas</h3>
+            <input type="button" id="calculateDays" onclick="daysUntilXmas()" value="Calculate"></br>
+            <p id="daysUntilXmas"></p>
+        </div>
+
+        <div>
+            <h3>Get the difference between a given number and 13. If the number is greater than 13 return double the absolute difference.</h3>
+            <form>
+                Write a number <input type="number" id="userInput">
+                <input type="button" value="Submit" onclick="getThirteenDifference()"> </br>
+                <p id="outcomeCalculation"></p>
+            </form>
+        </div>
+
+        <div>
+            <h3>Compute the sum of the two given integers. If the two values are same, then returns triple their sum.</h3>
+            <form>
+                Select a number <input type="number" id="userInputOne"></br>
+                Select another number <input type="number" id="userInputTwo"></br>
+                <input type="button" value="Calculate" onclick="calculateSum()"> </br>
+            </form>
+            <p id="totalCalculation"></p>
+        </div>
+
+        <div>
+            <h3>Check two given numbers and return true if one of the number is 50 or if their sum is 50.</h3>
+            <form>
+                First number to check: <input type="number" id="userNoOne"></br>
+                Second number to check: <input type="number" id="userNoTwo"></br>
+                <input type="button" value="Check numbers" onclick="checkNumbers()"> </br>
+            </form>
+            <p id="checkResult"></p>
+        </div>
+
+        <div>
+            <h3>Create a new string adding "Central" in front of a given string. If the given string begins with "Central" then return the original string.</h3>
+            <form>
+                Write a sentiment: <input type="text" id="userSentiment">
+                <input type="button" value="Your string" onclick="createString()"></br>
+            </form>
+            <p id="stringResult"></p>
+        </div>
+
+        <div>
+            <h3>Create a new string from a given string changing the position of first and last characters.</h3>
+            <form>
+                Write something: <input type="text" id="userString">
+                <input type="button" value="Generate string" onclick="changeString()">
+            </form>
+            <p id="stringOutput"></p>
+        </div>
+
+        <div>
+            <h3>Write a JavaScript program check if a given positive number is a multiple of 3 or a multiple of 7.</h3>
+            <form>
+                Pick a number: <input type="number" id="numberPick">
+                <input type="button" value="Check for multiple" onclick="checkMultiple()">
+            </form>
+            <p id="isItMultiple"></p>
+        </div>
+
+        <div>
+            <h3>Check all multiples.</h3>
+            <form>
+                Pick a number: <input type="number" id="userPick">
+                <input type="button" value="Check for multiple" onclick="checkAllMultiples()">
+            </form>
+            <p id="isMultiple"></p>
+        </div>
+
+        <script src="code.js"></script>
+    </body>
+</html>
